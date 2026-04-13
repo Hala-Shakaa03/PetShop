@@ -2,45 +2,296 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pet Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalia Pet Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="first-site">
 
-<!-- Navbar -->
-<header>
-    <div class="logo">PetWorld</div>
-    <nav>
-        <ul>
-            <li><a href="p1.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+<!-- Header -->
+<header class="header">
+    <div class="wrapper header-content">
+        <div class="site1-logo">
+            <img src="imgs/logo.png" alt="Animalia Logo">
+        </div>
 
-            <li class="dropdown">
-                <a href="#">Products ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="dog.html">Dog Products</a></li>
-                    <li><a href="cat.html">Cat Products</a></li>
-                    <li><a href="bird.html">Bird Products</a></li>
-                    <li><a href="fish.html">Fish Products</a></li>
-                    <li><a href="hamster.html">Hamster Products</a></li>
-                </ul>
-            </li>
+        <nav class="navbar">
+            <ul>
+                <li><a href="p1.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
 
-            <li><a href="#">Contact</a></li>
-            <li><a href="login.html" class="login-btn">Login</a></li>
-        </ul>
-    </nav>
+                <li class="dropdown">
+                    <a href="#">Products ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dog.html">Dog Products</a></li>
+                        <li><a href="cat.html">Cat Products</a></li>
+                        <li><a href="bird.html">Bird Products</a></li>
+                        <li><a href="fish.html">Fish Products</a></li>
+                        <li><a href="hamster.html">Hamster Products</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#" class="icon-btn">🔍</a>
+            <a href="#" class="icon-btn">🛒</a>
+            <a href="login.html" class="site1-login-btn">Login</a>
+        </div>
+    </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>We Care About Your Pets</h1>
-        <p>Everything your pet needs in one place</p>
-        <button>Shop Now</button>
+<!-- Hero -->
+<section class="site1-hero">
+    <div class="wrapper hero-content">
+        <div class="site1-hero-text">
+            <span class="hero-badge">🐾 Best Pet Store</span>
+            <h1>Everything Your Pet Needs</h1>
+            <p>
+                Discover healthy food, fun toys, cozy accessories, and loving care
+                for your furry friends — all in one colorful place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn hero-shop-btn">Shop Now</a>
+                <a href="#" class="btn hero-offer-btn">View Offers</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-shape"></div>
+            <img src="imgs/pets.png" alt="Cute pets">
+        </div>
     </div>
 </section>
+
+<!-- Categories -->
+<section class="site1-categories section-space">
+    <div class="wrapper">
+        <div class="section-heading">
+            <h2>Shop by Category</h2>
+            <p>Find the perfect items for every lovely pet.</p>
+        </div>
+
+        <div class="category-grid">
+            <div class="site1-category-card">
+                <div class="category-icon">🐶</div>
+                <h3>Dog Food</h3>
+                <p>Healthy meals for active dogs</p>
+            </div>
+
+            <div class="site1-category-card">
+                <div class="category-icon">🐱</div>
+                <h3>Cat Food</h3>
+                <p>Tasty food cats will adore</p>
+            </div>
+
+            <div class="site1-category-card">
+                <div class="category-icon">🧸</div>
+                <h3>Toys</h3>
+                <p>Fun playtime for happy pets</p>
+            </div>
+
+            <div class="site1-category-card">
+                <div class="category-icon">🦴</div>
+                <h3>Accessories</h3>
+                <p>Bags, bowls, beds, and more</p>
+            </div>
+
+            <div class="site1-category-card">
+                <div class="category-icon">🛁</div>
+                <h3>Grooming</h3>
+                <p>Keep your pets fresh and clean</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="site1-products section-space">
+    <div class="wrapper">
+        <div class="section-heading">
+            <h2>Featured Products</h2>
+            <p>Popular picks loved by pets and owners.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="site1-product-card">
+                <span class="tag new">New</span>
+                <img src="imgs/product1.png" alt="Dog Food Bag">
+                <h3>Premium Dog Food</h3>
+                <p class="site1-price">$25.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag sale">Sale</span>
+                <img src="imgs/product2.png" alt="Cat Food Bag">
+                <h3>Cat Dry Food</h3>
+                <p class="site1-price">$19.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag hot">Hot</span>
+                <img src="imgs/product3.png" alt="Pet Toy">
+                <h3>Chew Toy Set</h3>
+                <p class="site1-price">$12.50</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag new">New</span>
+                <img src="imgs/product4.png" alt="Pet Bed">
+                <h3>Soft Pet Bed</h3>
+                <p class="site1-price">$32.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promo banner -->
+<section class="promo section-space-small">
+    <div class="wrapper">
+        <div class="promo-box">
+            <div class="promo-text">
+                <span>Special Offer</span>
+                <h2>Up to 30% Off Pet Essentials</h2>
+                <p>Shop food, toys, grooming tools, and accessories at joyful prices.</p>
+                <a href="#" class="btn promo-btn">Shop Deals</a>
+            </div>
+
+            <div class="promo-image">
+                <img src="imgs/promo-pet.png" alt="Pet promo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Best Sellers -->
+<section class="site1-products section-space">
+    <div class="wrapper">
+        <div class="section-heading">
+            <h2>Best Sellers</h2>
+            <p>Top-rated favorites from our lovely collection.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="site1-product-card">
+                <span class="tag sale">Sale</span>
+                <img src="imgs/product5.png" alt="Pet Bowl">
+                <h3>Pet Bowl Set</h3>
+                <p class="site1-price">$14.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag hot">Hot</span>
+                <img src="imgs/product6.png" alt="Cat Toy">
+                <h3>Cat Play Ball</h3>
+                <p class="site1-price">$8.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag new">New</span>
+                <img src="imgs/product7.png" alt="Dog Collar">
+                <h3>Colorful Collar</h3>
+                <p class="site1-price">$10.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+
+            <div class="site1-product-card">
+                <span class="tag sale">Sale</span>
+                <img src="imgs/product8.png" alt="Pet Backpack">
+                <h3>Travel Pet Bag</h3>
+                <p class="site1-price">$29.00</p>
+                <a href="#" class="product-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why us -->
+<section class="why-us section-space">
+    <div class="wrapper">
+        <div class="section-heading">
+            <h2>Why Choose Animalia?</h2>
+            <p>Because your pet deserves joy, care, and quality.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">💙</div>
+                <h3>Trusted Quality</h3>
+                <p>Carefully selected products made for comfort, health, and happiness.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery to bring your pet’s favorites right to your door.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">🐾</div>
+                <h3>Pet-Friendly Choices</h3>
+                <p>Everything is chosen with love to fit the daily needs of pets and owners.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">⭐</div>
+                <h3>Lovely Experience</h3>
+                <p>A colorful, easy shopping experience that makes pet care more fun.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="wrapper footer-grid">
+        <div>
+            <h3>Animalia</h3>
+            <p>Your cheerful pet shop for food, toys, care, and adorable moments.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="p1.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="dog.html">Dog Products</a></li>
+                <li><a href="cat.html">Cat Products</a></li>
+                <li><a href="bird.html">Bird Products</a></li>
+                <li><a href="fish.html">Fish Products</a></li>
+                <li><a href="hamster.html">Hamster Products</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Email: hello@animalia.com</p>
+            <p>Phone: +970 59 123 4567</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Animalia. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>

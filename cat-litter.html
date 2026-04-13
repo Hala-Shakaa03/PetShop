@@ -28,51 +28,9 @@
         </ul>
     </nav>
 </header>
-<!--<script>-->
-<!--    function changeProduct(select, priceId, imgId){-->
 
-<!--        let data = select.value.split("|");-->
-
-<!--        let price = data[0];-->
-<!--        let image = data[1];-->
-
-<!--        // تغيير السعر-->
-<!--        document.getElementById(priceId).innerText = "₪" + price;-->
-
-<!--        // تغيير الصورة-->
-<!--        document.getElementById(imgId).src = image;-->
-<!--    }-->
-<!--</script>-->
-<script>
-    document.querySelectorAll(".product-card").forEach(card => {
-
-        const sizes = card.querySelectorAll(".size");
-        const price = card.querySelector(".price");
-        const img = card.querySelector("img");
-
-        sizes.forEach(btn => {
-            btn.addEventListener("click", () => {
-
-                // remove active
-                sizes.forEach(b => b.classList.remove("active"));
-
-                // add active
-                btn.classList.add("active");
-
-                // change price
-                price.textContent = "₪" + btn.dataset.price;
-
-                // change image
-                img.src = btn.dataset.img;
-            });
-        });
-
-    });
-</script>
 <body>
-
 <!--<h1 class="page-title">Cat Toys</h1>-->
-
 
 <section class="section">
     <h2>Cat Litter</h2>

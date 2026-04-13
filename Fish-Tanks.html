@@ -196,10 +196,50 @@
             <button>Add to Cart</button>
         </div>
 
+        <div class="product-card">
+
+            <div class="img-box">
+                <img src="imgs/Fish Net - Black.jpg">
+            </div>
+
+            <h3 class="product-name" data-base="Black Fish Net">
+                Black Fish Net - 10cm
+            </h3>
+
+            <p class="price">₪5</p>
+
+            <div class="sizes">
+        <span class="size active"
+              data-name="10cm"
+              data-price="5"
+              data-img="imgs/Fish Net - Black.jpg">10cm</span>
+
+                <span class="size"
+                      data-name="15cm"
+                      data-price="7"
+                      data-img="imgs/Fish Net - Black.jpg">15cm</span>
+
+                <span class="size"
+                      data-name="20cm"
+                      data-price="9"
+                      data-img="imgs/Fish Net - Black.jpg">20cm</span>
+            </div>
+
+            <div class="quantity">
+                <label>Quantity:</label>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
     </div>
 </section>
 
 <a href="fish.html" class="back-btn">⬅ Back</a>
+
 <script>
     document.querySelectorAll(".product-card").forEach(card => {
 
@@ -211,22 +251,21 @@
         sizes.forEach(btn => {
             btn.addEventListener("click", () => {
 
-                // active button
                 sizes.forEach(b => b.classList.remove("active"));
                 btn.classList.add("active");
 
-                //
-                if(btn.dataset.price){
+                // السعر
+                if (price && btn.dataset.price) {
                     price.textContent = "₪" + btn.dataset.price;
                 }
 
-                //
-                if(btn.dataset.img){
+                // الصورة
+                if (img && btn.dataset.img) {
                     img.src = btn.dataset.img;
                 }
 
-                //
-                if(name && btn.dataset.name){
+                // الاسم + الطول
+                if (name && btn.dataset.name) {
                     name.textContent = name.dataset.base + " - " + btn.dataset.name;
                 }
 
