@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birds Cages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="logo">PetWorld</div>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+
+            <li class="dropdown">
+                <a href="#">Products ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dog.html">Dog Products</a></li>
+                    <li><a href="cat.html">Cat Products</a></li>
+                    <li><a href="bird.html">Bird Products</a></li>
+                    <li><a href="fish.html">Fish Products</a></li>
+                    <li><a href="hamster.html">Hamster Products</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+<h1 class="page-title">Birds Cages & Nests</h1>
+
+<section class="section">
+    <div class="products">
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Round Bird Cage With Plate.jfif" alt="Round Bird Cage With Plate">
+            </div>
+            <h3>Round Bird Cage With Plate</h3>
+            <p class="price">₪35</p>
+
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Hassoun Plastic Bird Cage.jpg" alt="Hassoun Plastic Bird Cage">
+            </div>
+            <h3>Hassoun Plastic Bird Cage</h3>
+            <p class="price">₪20</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Blue Round Top Brird Cage.jfif" alt="Blue Round Top Bird Cag">
+            </div>
+            <h3>Blue Round Top Bird Cage</h3>
+            <p class="price">₪25</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Bird Cage for Small Birds.jpg" alt="Red Bird Cage for Small Birds">
+            </div>
+            <h3>Red Bird Cage for Small Birds</h3>
+            <p class="price">₪25</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Villa Bird Cage.jpeg" alt="Villa Bird Cage">
+            </div>
+            <h3>Red Villa Shaped Bird Cage</h3>
+            <p class="price">₪45</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Big Silver Bird Cage With Stand.jpeg" alt="Big Silver Bird Cage With Stand">
+            </div>
+            <h3>Big Silver Bird Cage With Stand</h3>
+            <p class="price">₪100</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Big Black Bird Cage With Stand.jpeg" alt="Big Black Bird Cage With Stand">
+            </div>
+            <h3>Big Black Bird Cage With Stand</h3>
+            <p class="price">₪90</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Hanging Straw Bird Nest.png" alt="Hanging Straw Bird Nest">
+            </div>
+            <h3>Hanging Straw Bird Nest</h3>
+            <p class="price">₪15</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Bamboo Bird Nest.jpg" alt="Bamboo Bird Nest">
+            </div>
+            <h3>Bamboo Bird Nest</h3>
+            <p class="price">₪12</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/3-Hole Finch Nest.jpg" alt="3-Hole Finch Nest">
+            </div>
+            <h3>3-Hole Finch Nest</h3>
+            <p class="price">₪20</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<a href="bird.html" class="back-btn">⬅ Back</a>
+
+<script>
+    document.querySelectorAll(".product-card").forEach(card => {
+
+        const sizes = card.querySelectorAll(".size");
+        const price = card.querySelector(".price");
+        const img = card.querySelector("img");
+        const name = card.querySelector(".product-name");
+
+        sizes.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                sizes.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                // السعر
+                if (price && btn.dataset.price) {
+                    price.textContent = "₪" + btn.dataset.price;
+                }
+
+                // الصورة
+                if (img && btn.dataset.img) {
+                    img.src = btn.dataset.img;
+                }
+
+                // الاسم + الطول
+                if (name && btn.dataset.name) {
+                    name.textContent = name.dataset.base + " - " + btn.dataset.name;
+                }
+
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
