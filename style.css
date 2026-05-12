@@ -1025,3 +1025,171 @@ h2::after{
 .first-site .navbar ul li:hover .dropdown-menu {
     display: block;
 }
+
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background: #f5f5f5;
+}
+
+
+body {
+    background: linear-gradient(135deg, #f4f6f8, #eef7f6);
+}
+
+.page-title {
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: #21445c;
+    margin-bottom: 35px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 1px solid #eeeeee;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+    border-color: #2c4c63;
+}
+
+.product-card .img-box {
+    background: #f8fafb;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.product-card h3 {
+    color: #1f3647;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.price {
+    color: #0f766e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantity label {
+    color: #444;
+    font-weight: 600;
+}
+
+.quantity input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.product-card button {
+    background: #21445c;
+    border-radius: 20px;
+    padding: 10px 18px;
+    transition: 0.3s ease;
+}
+
+.product-card button:hover {
+    background: #0f766e;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.size {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    transition: 0.3s;
+}
+
+.size:hover {
+    background: #e0e0e0;
+}
+
+.size.active {
+    background: #2c4c63;
+    color: white;
+    border-color: #2c4c63;
+}
+.product-card:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.img-box {
+    background: #f8fafb;
+    border-radius: 14px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.product-card:hover .img-box {
+    background: #eef7f6;
+}
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f766e;
+    margin: 8px 0;
+}
+
+.product-card button {
+    background: #21445c;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #0f766e;
+    transform: scale(1.07);
+}
+
+
+
+
+
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px auto;
+    max-width: 100%;
+}
+
+.size {
+    padding: 7px 13px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    transition: 0.3s;
+    font-size: 14px;
+    white-space: nowrap;
+}
+flex-wrap: wrap;

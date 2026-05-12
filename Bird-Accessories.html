@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bird Accessories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="logo">PetWorld</div>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+
+            <li class="dropdown">
+                <a href="#">Products ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dog.html">Dog Products</a></li>
+                    <li><a href="cat.html">Cat Products</a></li>
+                    <li><a href="bird.html">Bird Products</a></li>
+                    <li><a href="fish.html">Fish Products</a></li>
+                    <li><a href="hamster.html">Hamster Products</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+<h1 class="page-title">Feeders - Drinkers - Bathes</h1>
+
+<section class="section">
+    <div class="products">
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Transparent Plastic Bird Feeder – Set of 2.jpeg" alt="Transparent Plastic Bird Feeder – Set of 2">
+            </div>
+            <h3>Transparent Plastic Bird Feeder – Set of 2</h3>
+            <p class="price">₪4</p>
+
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Plastic Bird Egg Holder – Set of 2.jpg" alt="Plastic Bird Egg Holder – Set of 2">
+            </div>
+            <h3>Plastic Bird Egg Holder – Set of 2</h3>
+            <p class="price">₪4</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Round Plastic Bird Feeder.jpeg" alt="Round Plastic Bird Feeder">
+            </div>
+            <h3>Round Plastic Bird Feeder</h3>
+            <p class="price">₪3</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Hanging Plastic Bird Feeder.jpg" alt="Hanging Plastic Bird Feeder">
+            </div>
+            <h3>Hanging Plastic Bird Feeder</h3>
+            <p class="price">₪5</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Double Compartment Bird Feeder.png" alt="Double Compartment Bird Feeder">
+            </div>
+            <h3>Double Compartment Bird Feeder</h3>
+            <p class="price">₪10</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Plastic Bird Water Dispenser – 100ml.png">
+            </div>
+            <h3 class="product-name" data-base="Plastic Bird Water Dispenser">
+                Plastic Bird Water Dispenser - 100ml
+            </h3>
+            <p class="price">₪8</p>
+            <div class="sizes">
+        <span class="size active"
+              data-name="100ml"
+              data-price="8"
+              data-img="imgs/Plastic Bird Water Dispenser – 100ml.png">100ml</span>
+                <span class="size"
+                      data-name="200ml"
+                      data-price="12"
+                      data-img="imgs/Plastic Bird Water Dispenser – 200ml.png">200ml</span>
+            </div>
+            <div class="quantity">
+                <label>Quantity:</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Transparent Hanging Bird Bath.jfif" alt="Transparent Hanging Bird Bath">
+            </div>
+            <h3>Transparent Hanging Bird Bath</h3>
+            <p class="price">₪12</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="img-box">
+                <img src="imgs/Covered Bird Bath Tub.jfif" alt="Covered Bird Bath Tub">
+            </div>
+            <h3>Covered Bird Bath Tub</h3>
+            <p class="price">₪15</p>
+            <div class="quantity">
+                <label>Quantity</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+
+    </div>
+</section>
+
+<a href="bird.html" class="back-btn">⬅ Back</a>
+
+<script>
+    document.querySelectorAll(".product-card").forEach(card => {
+
+        const sizes = card.querySelectorAll(".size");
+        const price = card.querySelector(".price");
+        const img = card.querySelector("img");
+        const name = card.querySelector(".product-name");
+
+        sizes.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                sizes.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                // السعر
+                if (price && btn.dataset.price) {
+                    price.textContent = "₪" + btn.dataset.price;
+                }
+
+                // الصورة
+                if (img && btn.dataset.img) {
+                    img.src = btn.dataset.img;
+                }
+
+                // الاسم + الطول
+                if (name && btn.dataset.name) {
+                    name.textContent = name.dataset.base + " - " + btn.dataset.name;
+                }
+
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
